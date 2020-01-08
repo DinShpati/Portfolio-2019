@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,26 @@
     <title>Din's Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/popUp.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kulim+Park|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/939c3b7b3f.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
+    <div class="goUp">
+        <a href="#section1"><i class="fas fa-arrow-up"></i></a>
+    </div>
     <section id="section1">
+
         <nav id="navbar">
             <div>
                 <h3><a href="" class="logo">Din Spataj</a></h3>
@@ -24,34 +36,301 @@
                 <a href="" class="hamburger"><i class="fas fa-bars"></i></a>
             </div>
         </nav>
-        <h1 class="h1 center" style="margin-top: 100px;">Hello, my name is <span style="color: #ba1e60;">Din Spataj</span><br>and I am a Software Engineer</h1>
-        <h6 class="subh1 center">Web Developer &nbsp;/&nbsp; Database Administrator &nbsp;/&nbsp; App Developer</h6>
-        <div style="display:flex; margin-left: 34.5%; margin-top: 100px;">
+
+        <h1 class="h1 center h1animation" style="margin-top: 10%;">Hello, my name is <span style="color: #ba1e60;">Din
+                Spataj</span><br>and I am a Software Engineer</h1>
+        <h6 class="subh1 center">Web Developer &nbsp;/&nbsp; Database Administrator &nbsp;/&nbsp; App Developer
+            &nbsp;/&nbsp; Full-Stack Developer</h6>
+        <div style="display: flex; margin: 0 37%;justify-content: space-between;">
+            <div><a href="" class="social-Media-btn"><i class="fab fa-github"></i></a></div>
+            <div><a href="" class="social-Media-btn"><i class="fab fa-linkedin-in"></i></a></div>
+            <div><a href="" class="social-Media-btn"><i class="fab fa-codepen"></i></a></div>
+            <div><a href="" class="social-Media-btn"><i class="fab fa-free-code-camp"></i></a></div>
+        </div>
+        <div style="display:flex; margin-left: 34.5%; margin-top: 60px;">
             <a href="" class="btn1">Contact Me</a>
-            <a href="" class="btn1">View My Work</a>
+            <a href="#section2" class="btn1">View My Work &nbsp;<i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
 
     <section id="section2" align="center">
         <div class="htmlTempBG">
-            <h1 class="h1 center blue">About Me</h1>
-            <div class="col-4">
-                <div>
-                    
+            <h1 class="h1 center blue waypoint slide-in-left" data-animation="slide-in-left">About Me</h1>
+            <div class="col-4" style="padding-top: 70px;">
+                <div class="border-right waypoint pop-in">
+                    <h1 class="iconBG"><i class="fas fa-pencil-ruler"></i></h1 class="iconBG">
+                    <h2 class="h4">Pixel-Perfect Code</h2 class="h2">
+                </div>
+                <div class="border-right waypoint pop-in">
+                    <h1 class="iconBG"><i class="fas fa-desktop"></i></h1>
+                    <h2 class="h4">Fully Responsive Designs</h2>
+                </div>
+                <div class="border-right waypoint pop-in">
+                    <h1 class="iconBG"><i class="fas fa-tachometer-alt"></i></h1>
+                    <h2 class="h4">Fast Loading and Lag Free</h2>
+                </div>
+                <div class="waypoint pop-in">
+                    <h1 class="iconBG"><i class="far fa-star"></i></h1>
+                    <h2 class="h4">Dynamic and Unique Projects</h2>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="col-2">
+                <div style="border-right: 2px solid #3ca3df; padding-right: 20px;">
+                    <p class="p p-underline waypoint slide-in-left">
+                        I am passionate about building excellent software that improves the lives of those around me.
+                        I specialize in creating software for clients ranging from individuals and small-businesses all
+                        the way to large enterprise corporations.
+                        I work well alone or as a member of a team. I am interested in anything related to Software
+                        Developement, Web development, Database Development,
+                        or Android Development. I also value working with postive ambitious people and am open to any
+                        offers, especially remote offers.
+
+                    </p>
                 </div>
                 <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-                    
+                    <p class="p p-underline waypoint slide-in-right">
+                        I am a well organized person, love problem solving, learning new techonologies, and I am
+                        independent with high attention to detail and quality.
+                        I also have a few hobbies such as MMA, fishing, camping, and coding (yes, I code for fun). I
+                        love exploring new places and usually
+                        travel at least once a year.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="section3">
+        <div class="col-2">
+            <div>
+                <h1 class="h1 center waypoint flip-in-x">Skills & Expertise</h1>
+                <br>
+                <p class="p-sm waypoint slide-up">
+                    I am experienced in many diffrent fields with diffrent skills. I have build static and dynamic
+                    websites for many diffrent companies.
+                    I also love building android applications using java or kotlin. I am always learnign new
+                    techonologies and dont mind learning new things
+                    if needed.
+                    <br><br>
+                    I have full-stack developer experience with PHP and Node.js. I have build full-stack websites using
+                    both techonlogies.
+                    I also specialize in Front-End Development using HTML, CSS, Javascript, and React.js.
+                    I am also currently studying AI and Data science with python, but dont have any professional
+                    experience in the field, yet.
+                    <br><br>
+                    For more details, visit my <a href="https://www.linkedin.com/in/din-spataj-9a956a138/"
+                        style="color: #ba1e60;text-decoration: underline;">LinkedIn</a> profile, download my <a
+                        href="#contact" style="color: #ba1e60;text-decoration: underline;">resume</a>, or just <a
+                        href="#contact" style="color: #ba1e60;text-decoration: underline;">contact</a> me.
+
+                </p>
+            </div>
+            <div style="padding: 0 0 0 30px;" class="waypoint fade_in_show">
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                        <h2 class="h4">Web Development</h2>
+                        <hr>
+                        <a class="skillheader" href="">HTML 5</a>
+                        <a class="skillheader" href="">CSS 3</a>
+                        <a class="skillheader" href="">Javascript</a>
+                        <a class="skillheader" href="">React</a>
+                        <a class="skillheader" href="">jQuery</a>
+                        <a class="skillheader" href="">Bootstrap</a>
+                        <a class="skillheader" href="">PHP</a>
+                        <a class="skillheader" href="">MySQL</a>
+                        <a class="skillheader" href="">Materialize</a>
+                        <a class="skillheader" href="">SASS</a>
+                        <a class="skillheader" href="">Angular</a>
+                        <a class="skillheader" href="">Node.js</a>
+                        <a class="skillheader" href="">Express</a>
+                        <a class="skillheader" href="">REST API</a>
+                        <a class="skillheader" href="">Chart JS</a>
+                    </div>
+
+                    <div class="mySlides">
+                        <h2 class="h4">Android Development</h2>
+                        <hr>
+                        <a class="skillheader" href="">Java</a>
+                        <a class="skillheader" href="">Firebase</a>
+                        <a class="skillheader" href="">Kotlin</a>
+                        <a class="skillheader" href="">XML</a>
+                    </div>
+
+                    <div class="mySlides">
+                        <h2 class="h4">Database Development</h2>
+                        <hr>
+                        <a class="skillheader" href="">MS SQL-SERVER</a>
+                        <a class="skillheader" href="">MySQL</a>
+                        <a class="skillheader" href="">Firebase</a>
+                        <a class="skillheader" href="">PHPMyAdmin</a>
+                        <a class="skillheader" href="">NoSQL</a>
+                    </div>
+
+                    <div class="mySlides">
+                        <h2 class="h4">Data science and AI</h2>
+                        <hr>
+                        <a class="skillheader" href="">Python</a>
+                        <a class="skillheader" href="">Java</a>
+                        <a class="skillheader" href=""></a>
+                    </div>
+
+                    <div class="mySlides">
+                        <h2 class="h4">Game Development</h2>
+                        <hr>
+                        <a class="skillheader" href="">Java</a>
+                        <a class="skillheader" href="">LibGDX</a>
+                        <a class="skillheader" href="">C#</a>
+                        <a class="skillheader" href="">Unity</a>
+                        <a class="skillheader" href="">Blender</a>
+                    </div>
+
+                    <div class="mySlides">
+                        <h2 class="h4">Others</h2>
+                        <hr>
+                        <a class="skillheader" href="">NPM</a>
+                        <a class="skillheader" href="">Linux</a>
+                        <a class="skillheader" href="">Git</a>
+                        <a class="skillheader" href="">GitHub</a>
+                        <a class="skillheader" href="">Express</a>
+                        <a class="skillheader" href="">REST API</a>
+                        <a class="skillheader" href="">Photoshop</a>
+                        <a class="skillheader" href="">Sketch</a>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <h1 class="h1 gray">My Work</h1>
+        <br><br>
+        <div class="col-4 noGGap">
+
+            <div class="projectDiv" style="background: url('projectImgs/bg.PNG') center center no-repeat;
+                                           background-size: cover;">
+                <div class="projectTitle">
+                    <h2 class="h4 blue">Example</h2>
+                </div>
+                <div class="projectInfo">
+                    <a href="#popup1">View Project</a>
+                </div>
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2 class="h4">Example</h2>
+                        <a class="close" href="#section4">&times;</a>
+                        <hr><br>
+                        <div class="col-2">
+                            <div>
+                                <img src="projectImgs/bg.PNG" alt="Example" class="projectImg">
+                            </div>
+                            <div>
+                                <p class="p gray">Simple Example of a project that I may or may have created.</p>
+                                <hr>
+                                <p class="h4 gray">What I Used</p>
+                                <a class="skillheader" href="">HTML 5</a>
+                                <a class="skillheader" href="">CSS 3</a>
+                                <a class="skillheader" href="">Javascript</a>
+                                <a class="skillheader" href="">React</a>
+                                <a class="skillheader" href="">jQuery</a>
+                                <a class="skillheader" href="">Bootstrap</a>
+                                <a class="skillheader" href="">PHP</a>
+                                <a class="skillheader" href="">MySQL</a>
+                                <a class="skillheader" href="">Materialize</a>
+                                <a class="skillheader" href="">SASS</a>
+                                <a class="skillheader" href="">Angular</a>
+                                <a class="skillheader" href="">Node.js</a>
+                                <a class="skillheader" href="">Express</a>
+                                <a class="skillheader" href="">REST API</a>
+                                <a class="skillheader" href="">Chart JS</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                            <a href="" class="view">View App/Site</a>
+                            <a href="" class="code">See the Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="section5">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+
+        <h1 class="h1">Contact Me</h1>
+        <p class="p" style="text-align: center !important;">Have a question or want to work together? Feel free to
+            contact me when ever you like and I will try and get back to you as soon as possible.</p>
+        <form action="https://formspree.io/proendergamer03@gmail.com" method="post">
+            <div class="col-2">
+                <div><input type="text" class="input" name="Name" placeholder="Name" required style="width: 90%;"><span
+                        class="border-bottom"></span></div>
+                <div><input type="email" name="Email" placeholder="Email" class="input" required
+                        style="width: 100%;"><span class="border"></span></div>
+            </div>
+
+            <input type="text" name="Subject" placeholder="Subject" class="input"><span class="border"></span>
+            <textarea class="input" name="Message" id="" placeholder="Message" cols="30" rows="10"></textarea><span
+                class="border"></span> 
+
+            <button class="btnSubmit" type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <div class="socialMediBtnContainer">
+            <a href="" class="socialBtn2">
+                <div class="button button-2">
+                    <i class="fab fa-linkedin-in mdi"></i>
+                </div>
+            </a>
+            <a href="" class="socialBtn2">
+                <div class="button button-2">
+                    <i class="fab fa-github mdi"></i>
+                </div>
+            </a>
+            <a href="" class="socialBtn2">
+                <div class="button button-2">
+                    <i class="fab fa-codepen mdi"></i>
+                </div>
+            </a>
+            <a href="" class="socialBtn2">
+                <div class="button button-2">
+                    <i class="fab fa-free-code-camp mdi"></i>
+                </div>
+            </a>
+            <a href="mailto:proendergamer03@gmail.com" class="socialBtn2">
+                <div class="button button-2">
+                    <i class="far fa-envelope mdi"></i>
+                </div>
+            </a>
+        </div>
+        <p class="p-sm" style="text-align: center;">DIN SPATAJ <span class="blue">© 2020</span></p>
+    </footer>
+
+    <!-- Javascript -->
     <script src="main.js"></script>
+    <script src="animate.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </body>
+
 </html>
