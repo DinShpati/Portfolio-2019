@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/popUp.css">
+    <link rel="stylesheet" href="css/icon.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
 
 <body>
     <div class="goUp">
-        <a href="#section1"><i class="fas fa-arrow-up"></i></a>
+        <a href="javascript:void(0)" onclick="scrollToY(0, 2000, 'easeInOutQuint');"><i class="fas fa-arrow-up"></i></a>
     </div>
     <section id="section1">
 
@@ -33,9 +34,19 @@
                 <h3><a href="" class="logo">Din Spataj</a></h3>
             </div>
             <div style="margin-top: 16px;">
-                <a href="" class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="javascript:void(0)" class="hamburger nav-toggle" id="toggleNavBar" onclick="toggleNav();"><div id="iconToggle" class="nav-toggle__icon"></div></a>
             </div>
         </nav>
+
+        <div class="nav" id="nav">
+            <ul>
+                <li><a href="#section1" class="nav-links" onclick="closeNav();">Home</a></li>
+                <li><a href="#section2" class="nav-links" onclick="closeNav();">About Me</a></li>
+                <li><a href="#section3" class="nav-links" onclick="closeNav();">Skills & Expertise</a></li>
+                <li><a href="#section4" class="nav-links" onclick="closeNav();">My Work</a></li>
+                <li><a href="#section5" class="nav-links" onclick="closeNav();">Conatct Me</a></li>
+            </ul>
+        </div>
 
         <h1 class="h1 center h1animation" style="margin-top: 10%;">Hello, my name is <span style="color: #ba1e60;">Din
                 Spataj</span><br>and I am a Software Engineer</h1>
@@ -48,7 +59,7 @@
             <div><a href="" class="social-Media-btn"><i class="fab fa-free-code-camp"></i></a></div>
         </div>
         <div style="display:flex; margin-left: 34.5%; margin-top: 60px;">
-            <a href="" class="btn1">Contact Me</a>
+            <a href="javascript:void(0)" onclick="scrollToY(3200, 2000, 'easeInOutQuint');" class="btn1">Contact Me</a>
             <a href="#section2" class="btn1">View My Work &nbsp;<i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
@@ -145,6 +156,9 @@
                         <a class="skillheader" href="">Express</a>
                         <a class="skillheader" href="">REST API</a>
                         <a class="skillheader" href="">Chart JS</a>
+                        <a class="skillheader" href="">SASS</a>
+                        <a class="skillheader" href="">LESS</a>
+                        <a class="skillheader" href="">SCSS</a>
                     </div>
 
                     <div class="mySlides">
