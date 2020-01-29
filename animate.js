@@ -9,6 +9,9 @@ var animateHTML = function() {
     }
     
     var _addEventHandlers = function() {
+
+        var classHref = document.getElementsByClassName("nav-links");
+
         window.addEventListener("scroll", _checkPosition);
         window.addEventListener("resize", init)
     }
@@ -31,8 +34,6 @@ var animateHTML = function() {
 
   //scrolling to the top of the page
   {
-    // first add raf shim
-// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       ||
           window.webkitRequestAnimationFrame ||
@@ -57,7 +58,6 @@ function scrollToY(scrollTargetY, speed, easing) {
     // min time .1, max time .8 seconds
     var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
 
-    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
     var easingEquations = {
             easeOutSine: function (pos) {
                 return Math.sin(pos * (Math.PI / 2));

@@ -84,3 +84,9 @@
   
   /* Add a blue color to the author */
   .author {color: cornflowerblue;}
+
+  @media screen and (max-width: 500px){
+    .dot-container{
+      margin-top: 250px;
+    }
+  }

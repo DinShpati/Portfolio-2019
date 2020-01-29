@@ -78,3 +78,23 @@
     animation: fade_in_show 0.5s;
     -webkit-animation: fade_in_show 0.5s;
 }
+
+@media screen and (max-width: 1200px){
+    .col-2{
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 500px){
+    .col-4{
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        grid-gap: 30px;
+    }
+    .col-4:last-of-type{
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+        grid-gap: 30px;
+    }
+}

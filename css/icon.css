@@ -41,3 +41,8 @@
 .nav-toggle__icon.closeIcon:after {
     transform: translateY(9px) rotate(-45deg);
 }
+@media screen and (max-width: 500px){
+    .nav-toggle{
+        right: 50px;
+    }
+}
