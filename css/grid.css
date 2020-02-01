@@ -22,6 +22,9 @@
     height: 300px;
     text-align: center;
     position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 .projectInfo{
     width: inherit;

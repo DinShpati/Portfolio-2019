@@ -1,6 +1,6 @@
 /* ALL CSS ANIMATIONS WILL GO IN THIS FILE */
 .animation_delay_2{
-    animation-delay: .5s !important;
+    animation-delay: .4s !important;
 }
 .fade_in_show {
     animation: fade_in_show 1s;
