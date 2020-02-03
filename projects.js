@@ -3,36 +3,60 @@
 //Project Data
 var projects = [
     {
-        name: "Example1",
-        image: "projectImgs/bg.png",
-        desc: "Simple Example of a project that I may or may not have created.",
-        whatIUsed: ["HTML5", "CSS3", "Javascript", "React", "PHP", "MySQL", "REST", "api"],
+        name: "New England Shea Butter",
+        image: "projectImgs/nesb.png",
+        desc: "Ecommerce website made for New England Shea Butter, LLC.",
+        whatIUsed: ["HTML5", "CSS3", "Javascript", "PHP", "MySQL", "PayPal Api", "Jquery", "Bootstrap"],
         view: "nesheabutter.com",
-        code: "nesheabutter.com"
+        code: "view-source:https://nesheabutter.com/"
     },
     {
-        name: "Example2",
-        image: "https://www.w3schools.com/images/colorpicker.gif",
-        desc: "Simgdf have created.",
-        whatIUsed: ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"],
-        view: "nesheabutter.com",
-        code: "nesheabutter.com"
+        name: "WXY Movies",
+        image: "projectImgs/wxymovies.png",
+        desc: "This is a fully responsive landing page for a movies website.",
+        whatIUsed: ["HTML5", "CSS3", "Javascript", "Jquery"],
+        view: "https://dinshpati.github.io/wxy-Movies-Webpage/",
+        code: "https://github.com/DinShpati/wxy-Movies-Webpage"
     },
     {
-        name: "Example3",
-        image: "img/bg.jpg",
-        desc: "I cant believe this crazy amount fo code actually works!",
-        whatIUsed: ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"],
-        view: "nesheabutter.com",
-        code: "nesheabutter.com"
+        name: "LYFT Clone 2019",
+        image: "projectImgs/lyft.png",
+        desc: "A clone of lyfts website",
+        whatIUsed: ["HTML5", "CSS3", "Javascript", "Jquery"],
+        view: "https://dinshpati.github.io/LYFT_CLONE/",
+        code: "https://github.com/DinShpati/LYFT_CLONE"
     },
     {
-        name: "Example4",
-        image: "img/deviceTiles.png",
-        desc: "ha (pause) ha (pause) ha ha. - Mahmud Pasha Laugh",
-        whatIUsed: ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"],
-        view: "nesheabutter.com",
-        code: "nesheabutter.com"
+        name: "Cheap Flight Finder",
+        image: "projectImgs/cheapff.png",
+        desc: "Cheap flight finders main page for the landing page, desktop/laptop screen only",
+        whatIUsed: ["HTML5", "CSS3", "Javascript", "Jquery"],
+        view: "https://dinshpati.github.io/CheapFlightFinder/",
+        code: "https://github.com/DinShpati/CheapFlightFinder"
+    },
+    {
+        name: "Pazzam",
+        image: "projectImgs/pazzam.png",
+        desc: "This is a landing page build for a creative agnecy called Pazzam",
+        whatIUsed: ["HTML5", "CSS3", "Javascript"],
+        view: "https://dinshpati.github.io/Pazzam/",
+        code: "https://github.com/DinShpati/Pazzam"
+    },
+    {
+        name: "BrideBook",
+        image: "projectImgs/bridebook.jpg",
+        desc: "This is a email template made for bridebook.",
+        whatIUsed: ["HTML5", "CSS3", "Javascript"],
+        view: "https://dinshpati.github.io/bridebook/",
+        code: "https://github.com/DinShpati/bridebook"
+    },
+    {
+        name: "Norwalk CC Final Project",
+        image: "projectImgs/norwalkccfinalproject.png",
+        desc: "This is was my final project for a web dev class at Norwalk CC.",
+        whatIUsed: ["HTML5", "CSS3", "Javascript"],
+        view: "https://dinshpati.github.io/NorwalkCC-Final/index.html",
+        code: "https://github.com/DinShpati/NorwalkCC-Final"
     }
 ];
 
@@ -62,7 +86,7 @@ function listProjects(projects){
 
                 //Main Title H4
                 h4_1 = document.createElement("h2");
-                h4_1.className = "h4 blue";
+                h4_1.className = "h4 blackclr";
                 h4_1.innerHTML = name;
 
             //Main Button Div

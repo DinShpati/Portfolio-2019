@@ -160,6 +160,10 @@ body{
 .gray{
     color: #363636 !important;
 }
+.blackclr{
+    color: white !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .social-Media-btn{
     color: white;
     font-size: 35px;
